@@ -9,7 +9,7 @@ def update_artist():
    
     df = pd.DataFrame(result,
                       columns=['artist_id' , 'artist_name', 'PIN','city','street','DOB','Age','gallery_id'])
-    with st.expander("Current Artist Details"):
+    with st.expander("Current Artist Details we have"):
         st.dataframe(df)
     list_of_artists = [i[0] for i in view_only_artist_names()]
     selected_artist = st.selectbox("Artist to Edit", list_of_artists)
