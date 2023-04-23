@@ -29,14 +29,7 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        
-    - name: Deploy to Server 1
-      uses: easingthemes/ssh-deploy@main
-      env:
-       SSH_PRIVATE_KEY: ${{ secrets.mac-ohio.pem }}
-       REMOTE_HOST: ${{ secrets.ec2-18-224-246-14.us-east-2.compute.amazonaws.com }}
-       REMOTE_USER: ${{ secrets.ubuntu }}
-       TARGET: ${{ secrets.TARGET.DIR }}
+      
    
     - name: Test with pytest
       run: |
