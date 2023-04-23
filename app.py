@@ -13,7 +13,7 @@ from query_box import *
 def main():
 
     st.title("CC")
-    st.title("ART GALLERY MANAGEMENT SYSTEM")
+    st.title("ART GALLERY MANAGEMENTT SYSTEM")
     menu = ["Artist"]
     options = ["Insert", "View", "Update", "Delete"]
     options_1=["View"]
