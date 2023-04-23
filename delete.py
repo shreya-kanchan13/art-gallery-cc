@@ -15,7 +15,7 @@ def delete_artist():
     st.warning("Do you want to delete ::{}".format(selected_artist))
     if st.button("Delete ARTIST"):
         delete_artist_data(selected_artist)
-        st.success("Artist has been deleted successfully")
+        st.success("Artist has been deleted very successfully")
     new_result = view_all_artist_data()
     df2 = pd.DataFrame(new_result,
                        columns=['artist_id' , 'artist_name', 'PIN','city','street','DOB','Age','gallery_id'])
