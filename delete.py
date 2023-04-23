@@ -19,5 +19,5 @@ def delete_artist():
     new_result = view_all_artist_data()
     df2 = pd.DataFrame(new_result,
                        columns=['artist_id' , 'artist_name', 'PIN','city','street','DOB','Age','gallery_id'])
-    with st.expander("Updated details"):
+    with st.expander("Updated details of artists"):
         st.dataframe(df2)
